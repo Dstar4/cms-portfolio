@@ -44,19 +44,6 @@ Logo.propTypes = {
 const Footer = () => (
   <FooterContainer>
     <Fade bottom>
-      <span>
-        <Text
-          mb={2}
-          pb={1}
-          style={{
-            textTransform: 'uppercase',
-            borderBottom: 'white 3px solid',
-            display: 'table',
-          }}
-        >
-          Powered By
-        </Text>
-      </span>
       <Flex justifyContent="center" alignItems="center">
 
 
