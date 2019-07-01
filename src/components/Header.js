@@ -49,15 +49,15 @@ const Header = () => (
             const { home, links } = formatLinks(allLinks);
 
             const homeLink = home && (
-              <Image
-                src={Logo}
-                width="50px"
-                alt="Portfolio Logo"
+              <RouteLink
+                key={name}
                 onClick={home.onClick}
                 style={{
                   cursor: 'pointer',
                 }}
-              />
+              >
+                Home
+              </RouteLink>
             );
             const navLinks = links.map(({ name, value }) => (
               <RouteLink
