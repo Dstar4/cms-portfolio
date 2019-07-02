@@ -16,7 +16,7 @@ const HeaderContainer = styled(Headroom)`
   /* position: absolute; */
   z-index: 99;
   background: ${props => props.theme.colors.primaryDark};
-  padding-bottom: 4em;
+  padding-bottom: 3.5em;
 `;
 
 const formatLinks = allLinks =>

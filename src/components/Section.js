@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide';
 import LinkAnimated from './LinkAnimated';
 
 const SectionContainer = styled.div`
-  min-height: 50vh;
+  min-height: 80vh;
   min-width: 320px;
   max-width: 1366px;
   display: flex;
