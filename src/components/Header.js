@@ -13,9 +13,10 @@ const HeaderContainer = styled(Headroom)`
   .headroom--pinned {
     background: ${props => props.theme.colors.primaryDark};
   }
-
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  z-index: 99;
+  background: ${props => props.theme.colors.primaryDark};
+  padding-bottom: 4em;
 `;
 
 const formatLinks = allLinks =>

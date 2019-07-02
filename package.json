@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-mate",
   "version": "2.2.0",
-  "description": "Gatsby v2 starter to create a top notch portfolio!",
+  "description": "A portfolio to showcase the work of Daniel Starling",
   "main": "index.js",
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",

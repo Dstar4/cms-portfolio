@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
-import ContentfulLogo from './Logo/Contenful.svg';
-import GatsbyLogo from './Logo/Gatsby.svg';
+// import ContentfulLogo from './Logo/Contenful.svg';
+// import GatsbyLogo from './Logo/Gatsby.svg';
 
 const FooterContainer = styled.footer`
   padding: 1em;
@@ -29,9 +29,9 @@ const RenponsiveLogo = styled.img`
 
 const Logo = ({ url, logo, alt = '' }) => (
   <Box>
-    <a href={url} rel="noopener noreferrer" target="_blank">
-      <RenponsiveLogo src={logo} alt={alt} />
-    </a>
+    {/* <a href={url} rel="noopener noreferrer" target="_blank"> */}
+    {/* <RenponsiveLogo src={logo} alt={alt} /> */}
+    {/* </a> */}
   </Box>
 );
 
@@ -44,10 +44,7 @@ Logo.propTypes = {
 const Footer = () => (
   <FooterContainer>
     <Fade bottom>
-      <Flex justifyContent="center" alignItems="center">
-
-
-      </Flex>
+      <Flex justifyContent="center" alignItems="center"></Flex>
     </Fade>
   </FooterContainer>
 );
