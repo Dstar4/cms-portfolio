@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Heading, Textimport, Image, Text, Flex, Box } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
+import { Box } from 'rebass';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
-import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
+import FontAwesome from 'react-fontawesome';
+import { Link } from 'rebass';
 
-import ImageSubtitle from '../components/ImageSubtitle';
+const A = styled.a`
+  text-decoration: none;
+`;
 const Background = () => (
   <div>
     <Triangle
@@ -39,22 +39,39 @@ const Background = () => (
     />
   </div>
 );
-const CARD_HEIGHT = '200px';
+const IconLink = styled(Link)`
+  transition: color 0.5s;
+  color: ${props => props.theme.colors.primary};
+
+  &:hover {
+    color: ${props => props.theme.colors.primaryLight};
+  }
+`;
 
 const Contact = () => (
   <Section.Container id="contact" Background={Background}>
     <Section.Header name="Contact" label="contact" />
-    <CardContainer minWidth="300px">
-      <Flex style={{ height: CARD_HEIGHT }}>
-        <Card>
-          <a href="mailto:danielstarling4@gmail.com">
-            Email: danielstarling4@gmail.com
-          </a>
-          <h4>Twitter: @dstar3248</h4>
-          <h4>LinkedIn: dstarling</h4>
-        </Card>
-      </Flex>
-    </CardContainer>
+    <Box mx={3} fontSize={[4, 4, 4]}>
+      <IconLink>
+        <FontAwesome name="envelope" />
+        <A href="mailto:danielstarling4@gmail.com" target="_blank">
+          {' '}
+          danielstarling4@gmail.com
+        </A>
+      </IconLink>
+    </Box>
+    <Box mx={3} fontSize={[4, 4, 4]}>
+      <IconLink>
+        <FontAwesome name="twitter" />
+        <A href="https://twitter.com/Dstar3248"> @dstar3248</A>
+      </IconLink>
+    </Box>
+    <Box mx={3} fontSize={[4, 4, 4]}>
+      <IconLink>
+        <FontAwesome name="linkedin" />
+        <A href="https://www.linkedin.com/in/dstarling/"> dstarling</A>
+      </IconLink>
+    </Box>
   </Section.Container>
 );
 
